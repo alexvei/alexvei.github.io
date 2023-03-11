@@ -1,2 +1,1 @@
-# alexvei.github.io
-Resume Page
+# Resume Page
