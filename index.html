@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="UTF-8">
 	<title>alexvei</title>
 	<link rel="icon" href="icon.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
 	<style>
 		body {
 			background-color: #333;
 			color: #ddd;
-			font-family: "Courier New", Courier, monospace;
+			font-family: "Consolas", Consolas, monospace;
 			text-align: center;
 		}
 		a {
@@ -35,7 +37,6 @@
 			word-wrap: break-word;
 			font-size: 16px;	
 			line-height: 1.5;
-			letter-spacing: -0.02em;
 			color: #ddd;
 		}
 
@@ -57,14 +58,6 @@
 
 <body>
 	<h1 id="hello" style="text-align: center;">Hello World!\n</h1>
-	<script>
-		const title = document.getElementById("hello");
-		const letters = title.textContent.split("");
-	  	title.textContent = "";
-		letters.forEach((letter, i) => {
-			setTimeout(() => (title.textContent += letter), 75 * i);
-		});
-	</script>
 	<div class="paragraph">
 		<h2>About</h2>
 		<p>I'm an engineering graduate and current Maths student based in Manchester, with a passion for learning and growth. I spend most of my time coding and dealing with Maths problems. I do most of my coding in C and Python. Currently, I'm focused on my final year's Maths Project, which is about Applications of Mathematics in Medicine.</p>
@@ -94,6 +87,16 @@
 			<span>Twitter</span>
   		</div>
   	</a>
+
+	<script>
+		const title = document.getElementById("hello");
+		const letters = title.textContent.split("");
+	  	title.textContent = "";
+		letters.forEach((letter, i) => {
+			setTimeout(() => (title.textContent += letter), 75 * i);
+		});
+	</script>
+
 </body>
 
 </html>
