@@ -33,7 +33,7 @@
 			margin: 0 auto;	
 			text-align: justify;	
 			word-wrap: break-word;
-			font-size: 16px;
+			font-size: 16px;	
 			line-height: 1.5;
 			letter-spacing: -0.02em;
 			color: #ddd;
@@ -56,7 +56,15 @@
 </head>
 
 <body>
-	<h1 style="text-align: center;"> Hello World!\n </h1>
+	<h1 id="hello" style="text-align: center;">Hello World!\n</h1>
+	<script>
+		const title = document.getElementById("hello");
+		const letters = title.textContent.split("");
+	  	title.textContent = "";
+		letters.forEach((letter, i) => {
+			setTimeout(() => (title.textContent += letter), 75 * i);
+		});
+	</script>
 	<div class="paragraph">
 		<h2>About</h2>
 		<p>I'm an engineering graduate and current Maths student based in Manchester, with a passion for learning and growth. I spend most of my time coding and dealing with Maths problems. I do most of my coding in C and Python, but I'm interested in expanding to more languages (C++ and Java). Currently, focused on my final year's Maths Project, which is about Applications of Mathematics in Medicine.</p>
