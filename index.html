@@ -14,43 +14,54 @@
 		a {
 			display: inline-block;
 			text-align: center;
-			color: #7fffd4;
+			color: #baf73c;
 			text-decoration: none;
 		}
 		a:hover {
-			color: #00fa9a;
+			color: #38f689;
 		}
 		a:active {
-			color: #7fffd4;
+			color: #baf73c;
 		}
 		a span {
 			display: inline-block;
 			width: auto;
 			pointer-events: none;
 		}
-		p {
+		.paragraph {
 			max-width: 80ch;
-			margin: 0 auto;
+			margin: 0 auto;	
 			text-align: justify;	
 			word-wrap: break-word;
 			font-size: 16px;
 			line-height: 1.5;
 			letter-spacing: -0.02em;
-			color: #c8f7c5;
+			color: #ddd;
 		}
 
-		@media screen and (max-width: 768px) {
-			p {
-				max-width: 90%;
-			}
-
+		.paragraph h2 {
+			text-align: left;
+			margin: 0 0 5px 0;
+			font-size: 24px;
+			line-height: 1.2;
+			letter-spacing: -0.02em;
+			color : #ddd;
+			margin-top: 0;
+			margin-bottom: -12px;
+			text-decoration: underline;
+			font-weight: bold;
+		}
 
 	</style>
 </head>
+
 <body>
-	<h1 style="text-align: center;"> Hello! </h1>
-	<h2>Bio</h2>
-	<p>I'm an engineering graduate and current math student from Greece, with a passion for learning and growth. My skills in C and Python, combined with experience in IT and hospitality, make me a versatile problem-solver always seeking new challenges and opportunities to improve.</p>
+	<h1 style="text-align: center;"> Hello World!\n </h1>
+	<div class="paragraph">
+		<h2>About</h2>
+		<p>I'm an engineering graduate and current Maths student based in Manchester, with a passion for learning and growth. I spend most of my time coding and dealing with Maths problems. I do most of my coding in C and Python, but I'm interested in expanding to more languages (C++ and Java). Currently, focused on my final year's Maths Project, which is about Applications of Mathematics in Medicine.</p>
+	</div>
+	
 	<a href="https://www.github.com/alexvei" target="_blank">
 		<div>
 			<i class="fa fa-github"></i>
