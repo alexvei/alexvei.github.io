@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>alexvei</title>
+	<link rel="icon" href="icon.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<style>
+		body {
+			background-color: #333;
+			color: #ddd;
+			font-family: "Consolas", Consolas, monospace;
+			text-align: center;
+		}
+		a {
+			display: inline-block;
+			text-align: center;
+			color: #baf73c;
+			text-decoration: none;
+		}
+		a:hover {
+			color: #38f689;
+		}
+		a:active {
+			color: #baf73c;
+		}
+		a span {
+			display: inline-block;
+			width: auto;
+			pointer-events: none;
+		}
+		.paragraph {
+			max-width: 80ch;
+			margin: 0 auto;	
+			text-align: justify;	
+			word-wrap: break-word;
+			font-size: 16px;	
+			line-height: 1.5;
+			color: #ddd;
+		}
+
+		.paragraph h2 {
+			text-align: left;
+			margin: 0 0 5px 0;
+			font-size: 24px;
+			line-height: 1.2;
+			letter-spacing: -0.02em;
+			color : #ddd;
+			margin-top: 0;
+			margin-bottom: -12px;
+			text-decoration: underline;
+			font-weight: bold;
+		}
+
+	</style>
+</head>
+
+<body>
+	<h1 id="hello" style="text-align: center;">Hello World!\n</h1>
+	<div class="paragraph">
+		<h2>About</h2>
+		<p>I'm an engineer and Maths graduate, based in Manchester. I spend a lot of my time looking at data and learning how to analyze them. From data cleaning, to understanding data behaviour and trends, I enjoy looking at numbers and getting to know them more. I do most of my work using Python, with some support from SQL. Currently, I'm open to work and working on some small projects, to expand my knowledge, mainly around the area of data visualization. All my work is on github.</p>
+	</div>
+	
+	<a href="https://www.github.com/alexvei" target="_blank">
+		<div>
+			<i class="fa fa-github"></i>
+			<span>GitHub</span>
+		</div>
+	</a>
+	<a href="https://www.linkedin.com/in/alexandrospantazopoulos/" target="_blank">
+		<div>
+			<i class="fa fa-linkedin"></i>
+			<span>LinkedIn</span>
+  		</div>
+  	</a>
+  	<a href="https://www.twitter.com/alexveii" target="_blank">
+    	<div>
+			<i class="fa fa-twitter"></i>
+			<span>Twitter</span>
+  		</div>
+  	</a>
+
+	<script>
+		const title = document.getElementById("hello");
+		const letters = title.textContent.split("");
+	  	title.textContent = "";
+		letters.forEach((letter, i) => {
+			setTimeout(() => (title.textContent += letter), 75 * i);
+		});
+	</script>
+
+</body>
+
+</html>
